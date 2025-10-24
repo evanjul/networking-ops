@@ -1,0 +1,1 @@
+print("This is a message from src/print_from_src.py")
