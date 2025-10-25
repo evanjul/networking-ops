@@ -5,8 +5,9 @@ import config
 
 sys.dont_write_bytecode = True
 
-@config.run_before_main()
-def main(cmd=f"python3 src/{config.filename}.py"):
+@config.preprocess_main()
+def main(config):
+    cmd = f"echo Default config: {config.filename}"
     subprocess.Popen([cmd], shell=True)
 
 if __name__ == "__main__":
