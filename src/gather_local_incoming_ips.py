@@ -7,4 +7,4 @@ count = "100"
 
 
 def build_command():
-    return f"{interpreter} {command} -i }"
+    return f"{interpreter} {command} -i eth0"
